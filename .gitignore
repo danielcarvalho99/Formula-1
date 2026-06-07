@@ -1,0 +1,16 @@
+# Virtual environments
+.venv
+.env
+env
+
+# Vscode
+*vscode*
+
+# Credentials
+*.json*
+
+# Pycache
+*__pycache__*
+
+# Data for tests
+data/*

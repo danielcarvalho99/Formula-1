@@ -1,0 +1,11 @@
+[project]
+name = "formula-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastf1>=3.8.3",
+    "fastparquet>=2026.5.0",
+    "google-cloud-storage>=3.11.0",
+]
