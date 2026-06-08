@@ -8,8 +8,8 @@ def main():
     client = GCPClient("bucket-access.json")
     client = client.authenticate()
     
-    start = input("Add start date: ")
-    end = input("Add end date: ")
+    start = int(input("Add start date: "))
+    end = int(input("Add end date: "))
     # Extract data and save to local CSV files
     extractor = Extractor(start=start, end=end, modes=['R'])
     extractor.process_data()
