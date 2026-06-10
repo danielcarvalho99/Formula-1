@@ -52,7 +52,7 @@ API → GCS (Bronze) → BigQuery Silver → BigQuery Gold
 
 ### Prerequisites
 
-- Python 3.x
+- python >= 3.12
 - uv
 - GCP project with billing enabled
 - Service account with Storage Admin and BigQuery Admin roles
