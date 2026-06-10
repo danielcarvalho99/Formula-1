@@ -1,6 +1,6 @@
-from client import GCPClient
-from extractor import Extractor
-from writer import Writer
+from src.client import GCPClient
+from src.extractor import Extractor
+from src.writer import Writer
 
 def main():
 
