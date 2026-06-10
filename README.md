@@ -72,7 +72,7 @@ Place your service account JSON key in the project root and set the path in the 
 The ingestion script fetches data from the Formula 1 API and uploads it to GCS:
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 Files are stored following the pattern:
