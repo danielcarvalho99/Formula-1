@@ -1,0 +1,41 @@
+CREATE OR REPLACE EXTERNAL TABLE `f1_bronze.races`
+(
+  DriverNumber INT64,
+  BroadcastName STRING,
+  Abbreviation STRING,
+  DriverId STRING,
+  TeamName STRING,
+  TeamColor STRING,
+  TeamId STRING,
+  FirstName STRING,
+  LastName STRING,
+  FullName STRING,
+  HeadshotUrl STRING,
+  CountryCode STRING,
+  Position FLOAT64,
+  ClassifiedPosition STRING,
+  GridPosition FLOAT64,
+  Q1 STRING,
+  Q2 STRING,
+  Q3 STRING,
+  Time STRING,
+  Status STRING,
+  Points FLOAT64,
+  Laps FLOAT64,
+  Year INT64,
+  GP INT64, 
+  Mode STRING,
+  Country STRING,
+  Location STRING,
+  OfficialEventName STRING,
+  EventDate STRING,
+  EventName STRING,
+  EventFormat STRING,
+  
+)
+OPTIONS (
+  format = 'CSV',
+  uris = ['gs://bucket-f1-data/bronze/races/*_R.csv'],
+  allow_jagged_rows = true,
+  skip_leading_rows = 1
+);
